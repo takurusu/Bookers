@@ -27,7 +27,7 @@
 <h2>New book</h2>
 <div class=error>
 <% if @book.errors.any? %>
-  <%= @book.errors.count %>件のエラーが発生しました
+  <%= @book.errors.count %> error prohibited this book from being saved:
   <% @book.errors.full_messages.each do |message| %>
     <%= message %>
   <% end %>
@@ -50,5 +50,4 @@
   </div>
 <% end %>
   
-
 </body>
